@@ -1,24 +1,24 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": "Delord",
+    "database": "GESTION_MALADIE",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "operatorsAliases": false
+    "operatorsAliases": 0
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
+    "password": "Delord",
+    "database": "GESTION_MALADIE",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "operatorsAliases": false
+    "operatorsAliases": 0
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
+    "password": "Delord",
+    "database": "GESTION_MALADIE",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
