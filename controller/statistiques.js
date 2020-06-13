@@ -1,6 +1,7 @@
 const modele = require("../models");
 const shortid = require("shortid");
 const { Op } = require("sequelize");
+const date = require("date-now");
 
 module.exports = {
   add: function (req, res) {
@@ -16,14 +17,14 @@ module.exports = {
               where: {
                 [Op.and]: {
                   REFEPIDEMINS: epidemie.IDEPIDEMIE,
-                  //DATESTAT:
+                  DATESTAT: date(),
                 },
               },
               defaults: {
                 IDSTATISTIQUE: shortid.generate(),
                 NOMBREDECAS: NOMBREDECAS,
                 NOMBREDEMORT: NOMBREDEMORT,
-                DATESTAT: DATESTAT,
+                DATESTAT: date(),
                 REFEPIDEMINS: epidemie.IDEPIDEMIE,
               },
             })
